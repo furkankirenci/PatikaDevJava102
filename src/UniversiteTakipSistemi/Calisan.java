@@ -46,5 +46,11 @@ public class Calisan {
     public void yemekhane() {
         System.out.println(this.adSoyad + " yemekhaneye giris yapti.");
     }
+    
+    public static void loginUsers(Calisan[] loginUser){
+        for (Calisan c : loginUser){
+            c.giris();
+        }
+    }
 
 }
