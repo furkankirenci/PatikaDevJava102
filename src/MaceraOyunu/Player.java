@@ -58,26 +58,7 @@ public class Player {
     }
 
     public void selectLocation(){
-        Location loc;
-        System.out.println("Bolgeler;");
-        System.out.println("1 - Guvenli Ev");
-        System.out.println("2 - Magaza");
-        System.out.print("Lutfen Bolge Seciniz : ");
-        int selectedLoc = scan.nextInt();
-        System.out.println("------------------------------------------------------------------------------------");
 
-        switch (selectedLoc){
-            case 1:
-                loc = new Safehouse(this);
-                break;
-            case 2:
-                loc = new ToolStore(this);
-                break;
-            default:
-                System.out.println("Varsayilan olarak guvenli eve gonderildiniz...");
-                loc = new Safehouse(this);
-        }
-        loc.onLocation();
     }
 
     public int getDamage() {
